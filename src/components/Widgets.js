@@ -7,7 +7,7 @@ const Widgets = () => {
     {
       heading: "Total Revenue",
       iframeSrc:
-        "https://us-east-1.quicksight.aws.amazon.com/sn/embed/share/accounts/102249544166/dashboards/f9c0aed7-4787-40ec-b809-79aa273397e7/sheets/f9c0aed7-4787-40ec-b809-79aa273397e7_5c90b190-a5b8-4c06-8056-24a0fd18f824/visuals/f9c0aed7-4787-40ec-b809-79aa273397e7_bb4e15f0-bbc0-4713-a1ad-0fe5f24448e0?directory_alias=bearplex-x-odus",
+        "https://us-east-1.quicksight.aws.amazon.com/sn/embed/share/accounts/102249544166/dashboards/08f27de7-de48-409b-abc0-25d34274458f/sheets/08f27de7-de48-409b-abc0-25d34274458f_5c90b190-a5b8-4c06-8056-24a0fd18f824/visuals/08f27de7-de48-409b-abc0-25d34274458f_bb4e15f0-bbc0-4713-a1ad-0fe5f24448e0?directory_alias=bearplex-x-odus",
       buttonText: "Deal Performance",
       onButtonClick: () => alert("Deal Performance Clicked!"),
       showButton: true,
