@@ -142,8 +142,8 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="flex flex-col bg-white">
-      <div className="overflow-auto max-h-[500px] md:max-h-screen p-3">
+    <div className="flex flex-col">
+      <div className=" p-3 overflow-auto max-h-[550px] ">
         {items.map((item, index) => (
           <SideItem
             key={index}

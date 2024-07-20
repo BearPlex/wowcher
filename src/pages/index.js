@@ -28,14 +28,14 @@ const Index = () => {
       <Navbar toggleSidebar={toggleSidebar} />
       <div className="flex w-full">
         <div
-          className={`fixed z-50 md:relative md:translate-x-0 bg-white w-72 h-screen border-r-2 transform ${
+          className={`fixed z-50 md:relative md:translate-x-0 bg-white w-72   transform ${
             sidebarOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 ease-in-out`}
+          } transition-transform duration-300 ease-in-out overflow-auto max-h-screen`}
         >
           <Sidebar />
         </div>
         <div
-          className={`w-full transition duration-300 ease-in-out ${
+          className={`w-full max-w-7xl mx-auto transition duration-300 ease-in-out ${
             sidebarOpen ? "blur-sm" : ""
           }`}
         >
