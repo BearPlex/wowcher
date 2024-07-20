@@ -11,12 +11,24 @@ const WidgetCard = ({
   bgColor,
   textColor,
   divText,
+  iframeSrc, // Add iframeSrc prop
 }) => {
   return (
     <div className="bg-white cursor-pointer hover:bg-slate-50 border-[#E5E7EB] border p-4 rounded-lg flex flex-col justify-between">
       <div className="flex flex-col justify-center items-center gap-1">
         <h2 className="text-sm text-[#212121]">{heading}</h2>
-        <h2 className="text-2xl text-[#212121]">{data}</h2>
+        {iframeSrc ? (
+          <iframe
+            width="100%"
+            height="200"
+            src={iframeSrc}
+            frameBorder="0"
+            allowFullScreen
+            title={heading}
+          />
+        ) : (
+          <h2 className="text-2xl text-[#212121]">{data}</h2>
+        )}
       </div>
 
       {showButton ? (
@@ -25,7 +37,7 @@ const WidgetCard = ({
           onClick={onButtonClick}
         >
           {buttonText}
-          <HiMiniArrowUpRight/>
+          <HiMiniArrowUpRight />
         </button>
       ) : (
         <div

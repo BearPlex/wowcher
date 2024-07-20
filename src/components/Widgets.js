@@ -6,7 +6,8 @@ const Widgets = () => {
   const widgetData = [
     {
       heading: "Total Revenue",
-      data: "£850,000",
+      iframeSrc:
+        "https://us-east-1.quicksight.aws.amazon.com/sn/embed/share/accounts/102249544166/dashboards/f9c0aed7-4787-40ec-b809-79aa273397e7/sheets/f9c0aed7-4787-40ec-b809-79aa273397e7_5c90b190-a5b8-4c06-8056-24a0fd18f824/visuals/f9c0aed7-4787-40ec-b809-79aa273397e7_bb4e15f0-bbc0-4713-a1ad-0fe5f24448e0?directory_alias=bearplex-x-odus",
       buttonText: "Deal Performance",
       onButtonClick: () => alert("Deal Performance Clicked!"),
       showButton: true,
@@ -55,6 +56,7 @@ const Widgets = () => {
           bgColor={widget.bgColor}
           textColor={widget.textColor}
           divText={widget.divText}
+          iframeSrc={widget.iframeSrc} // Pass iframeSrc prop
         />
       ))}
     </div>
